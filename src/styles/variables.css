@@ -1,0 +1,36 @@
+:root {
+  /* Modern Gradient Colors - Unique FoodieRush Theme */
+  --primary-gradient: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+  --secondary-gradient: linear-gradient(135deg, #A8E6CF 0%, #3D84A8 100%);
+  --accent-gradient: linear-gradient(135deg, #FFD93D 0%, #FF6B6B 100%);
+  --dark-gradient: linear-gradient(135deg, #2C3E50 0%, #3498DB 100%);
+  
+  /* Solid Colors */
+  --primary-color: #FF6B6B;
+  --primary-dark: #FF5252;
+  --secondary-color: #4ECDC4;
+  --accent-color: #FFE66D;
+  --text-dark: #2C3E50;
+  --text-light: #7F8C8D;
+  --text-white: #FFFFFF;
+  --bg-light: #F9F9F9;
+  --bg-white: #FFFFFF;
+  --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+  --shadow-xl: 0 20px 30px rgba(0,0,0,0.12);
+  --shadow-hover: 0 15px 35px rgba(0,0,0,0.15);
+  
+  /* Border Radius */
+  --border-radius-sm: 8px;
+  --border-radius: 16px;
+  --border-radius-lg: 24px;
+  --border-radius-xl: 32px;
+  
+  /* Transitions */
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}

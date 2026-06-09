@@ -1,0 +1,133 @@
+.offers-page {
+  padding: 80px 0;
+  min-height: 80vh;
+  background: #f7fafc;
+}
+
+.offers-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.offer-card-enhanced {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.offer-card-enhanced:hover {
+  box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+}
+
+.offer-banner {
+  padding: 30px;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.offer-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  transform: rotate(45deg);
+}
+
+.offer-badge {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.offer-banner h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.offer-details {
+  padding: 25px;
+}
+
+.offer-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.offer-min {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.offer-discount {
+  color: #FF6B6B;
+  font-weight: 600;
+}
+
+.offer-code-wrapper {
+  margin-bottom: 15px;
+}
+
+.offer-code-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7fafc;
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: 1px dashed #FF6B6B;
+}
+
+.code-text {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #FF6B6B;
+  letter-spacing: 1px;
+}
+
+.copy-btn {
+  background: #FF6B6B;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.copy-btn:hover {
+  background: #FF5252;
+  transform: scale(1.05);
+}
+
+.offer-validity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #718096;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .offers-grid {
+    grid-template-columns: 1fr;
+  }
+}

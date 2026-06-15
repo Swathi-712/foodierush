@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaStar, FaClock, FaRupeeSign, FaHeart } from 'react-icons/fa';
+import { FaStar, FaRupeeSign, FaHeart } from 'react-icons/fa';
 import './RestaurantCard.css';
 
 const RestaurantCard = ({ restaurant, onFavorite, isFavorite }) => {

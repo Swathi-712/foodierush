@@ -121,9 +121,13 @@ const Navbar = () => {
             <FaUser />
           </Link>
 
-          <div className="mobile-menu-btn" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <FaTimes /> : <FaBars />}
-          </div>
+          <button
+            className="mobile-menu-btn"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+          >
+          {isOpen ? <FaTimes /> : <FaBars />}
+          </button>
         </div>
       </div>
 

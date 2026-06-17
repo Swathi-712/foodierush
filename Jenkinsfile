@@ -3,7 +3,7 @@ pipeline {
 
     stages {
 
-        stage('Checkout Code') {
+        stage('Checkout') {
             steps {
                 git branch: 'main',
                     url: 'https://github.com/Swathi-712/foodierush.git'
@@ -21,15 +21,30 @@ pipeline {
                 bat 'npm run build'
             }
         }
+
+        stage('Deploy to EC2') {
+            steps {
+                sshPublisher(
+                    publishers: [
+                        sshPublisherDesc(
+                            configName: 'foodierush-ec2',
+                            transfers: [
+                                sshTransfer(
+                                    sourceFiles: 'build/**',
+                                    removePrefix: 'build',
+                                    remoteDirectory: '/var/www/foodierush'
+                                )
+                            ]
+                        )
+                    ]
+                )
+            }
+        }
     }
 
     post {
         success {
-            echo 'Build Successful 🎉'
-        }
-
-        failure {
-            echo 'Build Failed ❌'
+            echo "Deployment Successful 🚀"
         }
     }
 }

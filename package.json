@@ -2,6 +2,7 @@
   "name": "foodierush",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://swathi-712.github.io/foodierush",
   "dependencies": {
     "@reduxjs/toolkit": "^2.12.0",
     "@testing-library/dom": "^10.4.1",

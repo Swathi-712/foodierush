@@ -11,7 +11,7 @@ import './styles/variables.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/foodierush">
       <div className="app">
         <Navbar />
         <Routes>

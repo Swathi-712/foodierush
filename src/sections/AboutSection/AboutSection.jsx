@@ -76,7 +76,7 @@ const AboutSection = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title">Our Story</h2>
+          <h2 className="section-title">Our Stories</h2>
           <div className="story-content">
             <div className="story-text">
               <p>
